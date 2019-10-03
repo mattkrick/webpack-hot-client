@@ -26,7 +26,7 @@ automagically adding the necessary webpack plugins and config entries. All of
 that allows for a seamless integration of Hot Module Replacement Support.
 
 Curious about the differences between this module and `webpack-hot-middleware`?
-[Read more here](https://github.com/hedgepigdaniel/webpack-hmr-client/issues/18).
+[Read more here](https://github.com/webpack-contrib/webpack-hot-client/issues/18).
 
 ## Requirements
 
