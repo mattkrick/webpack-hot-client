@@ -23,3 +23,4 @@ Thumbs.db
 output*.js
 output.js.map
 test/output
+.history
