@@ -1,15 +1,6 @@
-<div align="center">
-  <a href="https://github.com/webpack/webpack">
-    <img width="200" height="200" src="https://webpack.js.org/assets/icon-square-big.svg">
-  </a>
-</div>
-
-[![npm][npm]][npm-url]
-[![node][node]][node-url]
-[![deps][deps]][deps-url]
-[![tests][tests]][tests-url]
-[![chat][chat]][chat-url]
-[![size][size]][size-url]
+Matt's Changes:
+- check the error code & squelch if econnreset
+- don't stringify the stats, it makes V8 run out of memory
 
 # webpack-hmr-client
 
@@ -128,7 +119,7 @@ Type: `Object`
 
 ##### allEntries
 
-Type: `Boolean`  
+Type: `Boolean`
 Default: `false`
 
 If true and `autoConfigure` is true, will automatically configures each `entry`
@@ -137,7 +128,7 @@ different chunks in the same compiler configuration.
 
 ##### autoConfigure
 
-Type: `Boolean`  
+Type: `Boolean`
 Default: `true`
 
 If true, automatically configures the `entry` for the webpack compiler, and adds
@@ -145,7 +136,7 @@ the `HotModuleReplacementPlugin` to the compiler.
 
 ##### host
 
-Type: `String|Object`  
+Type: `String|Object`
 Default: `'localhost'`
 
 Sets the host that the `WebSocket` server will listen on. If this doesn't match
@@ -166,7 +157,7 @@ The value of `host.client` can also be set to a wildcard character for
 
 ##### hmr
 
-Type: `Boolean`  
+Type: `Boolean`
 Default: `true`
 
 If true, instructs the client script to attempt Hot Module Replacement patching
@@ -174,7 +165,7 @@ of modules.
 
 ##### https
 
-Type: `Boolean`  
+Type: `Boolean`
 Default: `false`
 
 If true, instructs the client script to use `wss://` as the `WebSocket` protocol.
@@ -191,7 +182,7 @@ Exception" for `localhost:{port}` where `{port}` is either the `port` or the
 
 ##### logLevel
 
-Type: `String`  
+Type: `String`
 Default: `'info'`
 
 Sets the minimum level of logs that will be displayed in the console. Please see
@@ -199,14 +190,14 @@ Sets the minimum level of logs that will be displayed in the console. Please see
 
 ##### logTime
 
-Type: `Boolean`  
+Type: `Boolean`
 Default: `false`
 
 If true, instructs the internal logger to prepend log output with a timestamp.
 
 ##### port
 
-Type: `Number|Object`  
+Type: `Number|Object`
 Default: `0`
 
 The port the `WebSocket` server should listen on. By default, the socket server
@@ -224,7 +215,7 @@ in the browser can be unpredictable and is specific to a particular environment.
 
 ##### reload
 
-Type: `Boolean`  
+Type: `Boolean`
 Default: `true`
 
 If true, instructs the browser to physically refresh the entire page if / when
@@ -238,7 +229,7 @@ it makes this module fairly useless._
 
 ##### server
 
-Type: `Object`  
+Type: `Object`
 Default: `null`
 
 If a server instance (eg. Express or Koa) is provided, the `WebSocket` server
@@ -246,7 +237,7 @@ will attempt to attach to the server instance instead of using a separate port.
 
 ##### stats
 
-Type: `Object`  
+Type: `Object`
 Default: `{ context: process.cwd() }`
 
 An object specifying the webpack [stats][stats] configuration. This does not
