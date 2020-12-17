@@ -1,7 +1,8 @@
 Matt's Changes:
 - check the error code & squelch if econnreset
 - don't stringify the stats, it makes V8 run out of memory
-
+- Bump to v5 ('webpack/lib/javascript/JavascriptParserHelpers')
+- Upgrade entry point handler to v5
 # webpack-hot-client
 
 A client for enabling, and interacting with, webpack [Hot Module Replacement][hmr-docs].
