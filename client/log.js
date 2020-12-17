@@ -48,31 +48,40 @@ function () {
       (_console4 = console).trace.apply(_console4, arguments);
     }
   }, {
+    key: "debug",
+    value: function debug() {
+      var _console5;
+
+      if (levels.indexOf(this.level) > levels.indexOf('debug')) return;
+
+      (_console5 = console).debug.apply(_console5, arguments);
+    }
+  }, {
     key: "info",
     value: function info() {
-      var _console5;
+      var _console6;
 
       if (levels.indexOf(this.level) > levels.indexOf('info')) return;
 
-      (_console5 = console).info.apply(_console5, arguments);
+      (_console6 = console).info.apply(_console6, arguments);
     }
   }, {
     key: "warn",
     value: function warn() {
-      var _console6;
+      var _console7;
 
       if (levels.indexOf(this.level) > levels.indexOf('warn')) return;
 
-      (_console6 = console).warn.apply(_console6, arguments);
+      (_console7 = console).warn.apply(_console7, arguments);
     }
   }, {
     key: "error",
     value: function error() {
-      var _console7;
+      var _console8;
 
       if (levels.indexOf(this.level) > levels.indexOf('error')) return;
 
-      (_console7 = console).error.apply(_console7, arguments);
+      (_console8 = console).error.apply(_console8, arguments);
     }
   }]);
 
